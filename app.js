@@ -1,3 +1,4 @@
+// Carousel de imagenes //
 window.addEventListener('load', function () {
     new Glider(document.querySelector('.carousel_lista'), {
         slidesToShow: 4,
@@ -10,11 +11,10 @@ window.addEventListener('load', function () {
     });
 });
 
-// Comportamiento section hover // Se agrega solamente al primer elemento, se intenta utilizar querySelectorAll, 
-//  pero tiene un bug en que "content.addEventListener no es una funcion"
+// Comportamiento section hover //
 
-let content = document.getElementById('carouselElement'),
-    element = document.getElementById('showBtn');
+let content = document.querySelectorAll('.carouselElement'),
+    element = document.querySelectorAll('.showBtn');
 
 const showContent = () => {
     element.style.display = "block";
