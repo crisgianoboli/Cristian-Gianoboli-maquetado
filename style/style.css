@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0; }
+  * span {
+    font-weight: 400; }
+  * .section {
+    display: flex;
+    flex-direction: column; }
+    * .section .image {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px; }
+      * .section .image img {
+        width: 230px;
+        width: 250px; }
+    * .section .banner {
+      padding-top: 30px;
+      display: flex; }
+      * .section .banner .public-section .img-public {
+        padding-top: 70px;
+        width: 220px;
+        height: 320px; }
+      * .section .banner .carousel {
+        width: 1000px;
+        height: 300px;
+        margin-left: 80px;
+        display: flex;
+        flex-direction: column;
+        align-self: center; }
+        * .section .banner .carousel .title {
+          margin-left: 200px;
+          width: 70%;
+          text-align: center;
+          font-size: 2em;
+          font-weight: 200;
+          text-transform: uppercase;
+          background-color: yellow; }
+        * .section .banner .carousel .carousel-contenedor {
+          position: relative; }
+          * .section .banner .carousel .carousel-contenedor .carousel_lista {
+            overflow: hidden; }
+            * .section .banner .carousel .carousel-contenedor .carousel_lista .carousel_element {
+              margin: 0 5px;
+              box-shadow: 0px 0px 1px black;
+              display: flex;
+              flex-direction: column;
+              align-items: center; }
+              * .section .banner .carousel .carousel-contenedor .carousel_lista .carousel_element .image-carousel {
+                width: 200px;
+                height: 200px; }
+              * .section .banner .carousel .carousel-contenedor .carousel_lista .carousel_element .carousel-text {
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: bold; }
+              * .section .banner .carousel .carousel-contenedor .carousel_lista .carousel_element:hover {
+                box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6); }
+              * .section .banner .carousel .carousel-contenedor .carousel_lista .carousel_element .carousel-price {
+                text-align: center;
+                font-weight: bold; }
+              * .section .banner .carousel .carousel-contenedor .carousel_lista .carousel_element .price-iva {
+                text-align: center;
+                opacity: 0.5; }
+              * .section .banner .carousel .carousel-contenedor .carousel_lista .carousel_element .show-btn {
+                display: none; }
+                * .section .banner .carousel .carousel-contenedor .carousel_lista .carousel_element .show-btn .btn {
+                  background-color: red;
+                  color: white;
+                  text-transform: uppercase;
+                  text-align: center; }
+          * .section .banner .carousel .carousel-contenedor .prev,
+          * .section .banner .carousel .carousel-contenedor .next {
+            position: absolute;
+            display: block;
+            width: 30px;
+            height: 30px;
+            border: none;
+            top: calc(50% - 35px);
+            cursor: pointer;
+            line-height: 30px;
+            text-align: center;
+            background: none;
+            color: black;
+            outline: none; }
+            * .section .banner .carousel .carousel-contenedor .prev:focus,
+            * .section .banner .carousel .carousel-contenedor .next:focus {
+              color: red; }
+            * .section .banner .carousel .carousel-contenedor .prev:active,
+            * .section .banner .carousel .carousel-contenedor .next:active {
+              border: 1px solid black;
+              border-radius: 3px; }
+          * .section .banner .carousel .carousel-contenedor .prev {
+            left: -30px; }
+          * .section .banner .carousel .carousel-contenedor .next {
+            right: -30px; }
+
+/*# sourceMappingURL=style.css.map */

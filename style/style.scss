@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    span {
+        font-weight: 400;
+    }
+    
+
+    .section{
+
+        display: flex;
+        flex-direction: column;       
+
+
+        .image{
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding-top: 20px;
+
+            img {
+                width: 230px;
+                width: 250px;
+            }
+        }
+
+        .banner {
+            
+            padding-top: 30px;
+            display: flex;            
+
+            .public-section {              
+                
+                .img-public {
+                    padding-top: 70px;
+                    width: 220px;
+                    height: 320px;
+                }
+            }
+
+            // Carousel 
+            .carousel {
+                
+                width: 1000px;
+                height: 300px;
+                margin-left: 80px;
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+
+                .title {
+                    margin-left: 200px;
+                    width: 70%;
+                    text-align: center;
+                    font-size: 2em;
+                    font-weight: 200;
+                    text-transform: uppercase;
+                    background-color: yellow;
+                }
+
+                .carousel-contenedor {
+
+                    position: relative;
+
+                    .carousel_lista {
+                        overflow: hidden;
+
+                        .carousel_element {
+                            margin: 0 5px;
+                            box-shadow: 0px 0px 1px rgba(0,0,0,1);
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+
+                            .image-carousel {
+
+                                width: 200px;
+                                height: 200px;
+                            } 
+
+                            .carousel-text {
+                                text-align: center;
+                                text-transform: uppercase;
+                                font-weight: bold;
+                            }
+
+                            &:hover {
+                                box-shadow: 0px 0px 8px rgba(0,0,0, 0.6);
+
+                                
+                            }
+
+                            .carousel-price {
+                                text-align: center;
+                                font-weight: bold;
+                            }
+
+                            .price-iva {
+                                text-align: center;
+                                opacity: 0.5;
+                            }
+
+                            .show-btn {
+
+                                display: none;
+                                
+                                .btn {
+                                    background-color: red;
+                                    color: white;
+                                    text-transform: uppercase;
+                                    text-align: center;
+                                                                    
+                                }
+
+                            }
+                            
+                        }
+                    }
+
+                    .prev, 
+                    .next {
+                        position: absolute;
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        border: none;
+                        top: calc(50% - 35px);
+                        cursor: pointer;
+                        line-height: 30px;
+                        text-align: center;
+                        background: none;
+                        color: black;
+                        outline: none;
+                    
+
+                        &:focus {
+                            color: red;
+                        }
+
+                        &:active {
+                            border: 1px solid black;
+                            border-radius: 3px;
+                        }
+
+                    }
+
+                    .prev {
+                        left: -30px;
+                    }
+                    .next {
+                        right: -30px;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
